@@ -197,6 +197,78 @@ Verification System
 
 ---
 
+# 📸 Screenshots
+
+## 🧑‍💼 Admin Dashboard
+
+The Admin Dashboard provides complete control over the civic grievance workflow.
+
+Features:
+- Monitor all complaints in realtime
+- Track complaint status
+- Verify worker completion uploads
+- Manage workers and clusters
+- View live complaint zones on map
+
+![Admin Dashboard](./screenshots/adminportal.png)
+
+---
+
+## 👷 Worker Portal
+
+The Worker Portal is designed for field workers to manage assigned civic tasks.
+
+Workers can:
+- View assigned complaints
+- Start work on complaints
+- Upload completion proof images
+- Track task progress
+- Update complaint status
+
+![Worker Dashboard](./screenshots/workersdashboard.png)
+
+---
+
+## 📱 Citizen Mobile App – Home Screen
+
+The citizen mobile application allows users to quickly access civic services.
+
+Features:
+- Report civic issues
+- Access complaint system
+- Navigate using bottom tabs
+- Realtime civic reporting
+
+![Citizen App Home](./screenshots/ss.png)
+
+---
+
+## 📱 Citizen Complaint Management
+
+Citizens can monitor submitted complaints and view updates.
+
+Features:
+- View complaint cards
+- Track complaint progress
+- Monitor status updates
+- View uploaded complaint images
+
+![Citizen Complaints](./screenshots/ss2.png)
+
+---
+
+## 📱 Citizen Complaint Workflow
+
+The mobile app provides a complete complaint lifecycle experience.
+
+Features:
+- Complaint tracking
+- Realtime workflow updates
+- Complaint status visibility
+- Smart civic issue management
+
+![Citizen Workflow](./screenshots/ss3.png)
+
 # 🗂 Project Structure
 
 ```bash
