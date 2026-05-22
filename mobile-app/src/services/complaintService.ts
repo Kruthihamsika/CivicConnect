@@ -3,6 +3,8 @@ import { supabase } from './supabase';
 type CreateComplaintPayload = {
   title: string;
   description: string;
+  image_url?: string | null;
+  category?: string;
 };
 
 export async function createComplaint(
@@ -31,8 +33,16 @@ export async function createComplaint(
       .insert([
         {
           title: payload.title,
+
           description:
             payload.description,
+
+          image_url:
+            payload.image_url,
+
+          category:
+            payload.category,
+
           citizen_id: user.id,
         },
       ])

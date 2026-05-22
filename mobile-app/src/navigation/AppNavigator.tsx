@@ -11,10 +11,11 @@ import {
   createNativeStackNavigator,
 } from '@react-navigation/native-stack';
 
-import HomeScreen from '../screens/HomeScreen';
 import LoginScreen from '../screens/LoginScreen';
-import CreateComplaintScreen from '../screens/CreateComplaintScreen';
-import ComplaintListScreen from '../screens/ComplaintListScreen';
+
+import ComplaintDetailScreen from '../screens/ComplaintDetailScreen';
+
+import TabNavigator from './TabNavigator';
 
 import {
   getCurrentSession,
@@ -68,29 +69,27 @@ export default function AppNavigator() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}
+      >
         {isAuthenticated ? (
           <>
+            {/* Bottom Tabs */}
             <Stack.Screen
-              name="Home"
-              component={HomeScreen}
-            />
-
-            <Stack.Screen
-              name="CreateComplaint"
+              name="MainTabs"
               component={
-                CreateComplaintScreen
+                TabNavigator
               }
             />
 
+            {/* Detail Screen */}
             <Stack.Screen
-              name="ComplaintList"
+              name="ComplaintDetail"
               component={
-                ComplaintListScreen
+                ComplaintDetailScreen
               }
-              options={{
-                title: 'My Complaints',
-              }}
             />
           </>
         ) : (
